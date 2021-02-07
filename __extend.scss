@@ -1,32 +1,24 @@
-/* @extend background-cover; */
-background-cover {
-    @include background-size( cover );
+background_cover {
+    @include background_size( cover );
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
 }
-/* @extend background-contain; */
-background-contain {
-    @include background-size( contain );
+
+/* @extend background_cover; */
+
+background_contain {
+    @include background_size( contain );
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
 }
-/* @extend display-flex; */
-display-flex {
+display_flex {
     display: flex;
     display: -webkit-flex;
 }
-/* @extend list-type-ulli; */
-list-type-ulli {
+list_type_ulli {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-/* @extend msc-listing-row; */
-msc-listing-row {
-    .msc-listing {
-        @extend display-flex;
-        @include flex-wrap(wrap);
-    }
 }
